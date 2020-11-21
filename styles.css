@@ -106,3 +106,6 @@ ul {
 #description {
   text-transform: capitalize;
 }
+h1 {
+  font-size: 35px;
+}
