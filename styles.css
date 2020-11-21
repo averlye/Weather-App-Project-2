@@ -40,7 +40,7 @@ body {
 
 input[type=submit] {
   display: inline;
-  background: #E9BDAF;
+  background: #E3BFBE;
   border: none;
   border-radius: 19px;
   cursor: pointer;
@@ -55,7 +55,7 @@ input[type=submit]:hover {
 }
 button {
   display: inline;
-  background: #E9BDAF;
+  background: #E3BFBE;
   border-radius: 19px;
   cursor: pointer;
   transition: 180ms;
