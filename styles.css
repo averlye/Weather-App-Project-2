@@ -97,12 +97,12 @@ footer {
 #flow-left {
   text-align: left;
 }
-#weather-details {
-  color: 
-}
 ul {
   margin-top: 24px;
   list-style: none;
   font-size: 14px;
   color: #484749;
+}
+#description {
+  text-transform: capitalize;
 }

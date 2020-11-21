@@ -13,19 +13,19 @@
     <div id="widget">
       <div class="city">
         <form id="city-form">
-          <input type="text" placeholder="Type the city name..." id="city-search" autocomplete="off" width="300px">
+          <input type="search" placeholder="Type the city name..." id="city-search" autocomplete="off" width="300px">
           <input type="submit" class="search-button" value="🔎">
           <button>Search for current location</button>
         </form>
       </div>
       <div class="city-details">
-        <p id="date">Friday 15:00</p>
+        <p id="date"></p>
         <div class="row" id="flow-right">
           <div class="col-sm-6">
-            <h1>Warsaw</h1>
+            <h1 id="city"></h1>
             <img
               id="icon-temperature"
-              src="http://openweathermap.org/img/wn/04d.png" /><span id="temperature">10</span>
+              src="http://openweathermap.org/img/wn/04d.png" /><span id="temperature"></span>
             <span id="units">
               <a href="#" id="celsius-link">°C</a> |
               <a href="#" id="fahrenheit-link">°F</a>
@@ -34,10 +34,10 @@
           <div class="col-sm-6" id="flow-left">
             <ul>
               <li>Wind speed: 
-                <span id="wind-speed">2 km/h</span></li>
-              <li>Precipitation: 
-                <span id="precipitation">40%</span></li>
-              <li>Cloudy</li>
+                <span id="wind-speed"></span> km/h</li>
+              <li>Humidity: 
+                <span id="humidity"></span>%</li>
+              <li><span id="description"></span></li>
             </ul>
           </div>
         </div>
