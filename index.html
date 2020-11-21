@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=100%, initial-scale=1.0">
+    <title>🌍Weather Forecast App🌍</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <div id="widget">
+      <div class="city">
+        <form id="city-form">
+          <input type="text" placeholder="Type the city name..." id="city-search" autocomplete="off" width="300px">
+          <input type="submit" class="search-button" value="🔎">
+          <button>Search for current location</button>
+        </form>
+      </div>
+      <div class="city-details">
+        <p>Friday 15:00</p>
+        <h1>Warsaw</h1>
+        <span>10</span>
+        <img
+        src="http://openweathermap.org/img/wn/04d.png" />
+        <span>
+          <a href="#" id="celsius-link">°C</a>|
+          <a href="#" id="fahrenheit-link">°F</a>
+        </span>
+        <div class="col-sm-6">
+          <p>Wind speed:</p>
+        </div>
+        <div class="col-sm-6">
+          <p>Humidity:</p>
+        </div>
+      </div>
+      <br />
+      <div class="city-forecast">
+        <div class="row">
+          <div class="col-sm-3">
+            <p>SAT</p>
+          </div>
+          <div class="col-sm-3">
+            <p>SUN</p>
+          </div>
+          <div class="col-sm-3">
+            <p>MON</p>
+          </div>
+          <div class="col-sm-3">
+            <p>TUE</p>
+          </div>
+        </div>
+        <div class="row icon">
+          <div class="col-sm-3">
+            <p></p>
+          </div>
+          <div class="col-sm-3">
+            <p></p>
+          </div>
+          <div class="col-sm-3">
+            <p></p>
+          </div>
+          <div class="col-sm-3">
+            <p></p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-3">
+            <p class="icon-forecast"></p>
+          </div>
+          <div class="col-sm-3">
+            <p class="icon-forecast"></p>
+          </div>
+          <div class="col-sm-3">
+            <p class="icon-forecast"></p>
+          </div>
+          <div class="col-sm-3">
+            <p class="icon-forecast"></p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-3">
+            <p>-</p>
+          </div>
+          <div class="col-sm-3">
+            <p>-</p>
+          </div>
+          <div class="col-sm-3">
+            <p>-</p>
+          </div>
+          <div class="col-sm-3">
+            <p>-</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>Made by Alicja Nowak 👧 Click <a href="https://github.com/averlye/my-weather-app.git">HERE</a> to see full GitHub respiratory</footer>
+  </div>
+</body>
+<script src="script.js"></script>
+</html>
