@@ -19,20 +19,27 @@
         </form>
       </div>
       <div class="city-details">
-        <p>Friday 15:00</p>
+        <p id="date">Friday 15:00</p>
         <h1>Warsaw</h1>
-        <span>10</span>
         <img
-        src="http://openweathermap.org/img/wn/04d.png" />
-        <span>
-          <a href="#" id="celsius-link">°C</a>|
+          id="icon-temperature"
+          src="http://openweathermap.org/img/wn/04d.png" /><span id="temperature">10</span>
+        <span id="units">
+          <a href="#" id="celsius-link">°C</a> |
           <a href="#" id="fahrenheit-link">°F</a>
         </span>
-        <div class="col-sm-6">
-          <p>Wind speed:</p>
-        </div>
-        <div class="col-sm-6">
-          <p>Humidity:</p>
+        <div class="row" id="weather-details">
+          <div class="col-4">
+            <p class="flow-right">Wind speed: 
+              <span id="wind-speed">N/A</span></p>
+          </div>
+          <div class="col-4">
+            <p>Precipitation: 
+              <span id="precipitation">N/A</span></p>
+          </div>
+          <div class="col-4">
+            <p class="flow-left">Weather description</p>
+          </div>
         </div>
       </div>
       <br />
@@ -95,7 +102,7 @@
         </div>
       </div>
     </div>
-    <footer>Made by Alicja Nowak 👧 Click <a href="https://github.com/averlye/my-weather-app.git">HERE</a> to see full GitHub respiratory</footer>
+    <footer>Made by Alicja Nowak 👧 Click <a href="https://github.com/averlye/Weather-App-Project-2.git">HERE</a> to see full GitHub respiratory</footer>
   </div>
 </body>
 <script src="script.js"></script>
