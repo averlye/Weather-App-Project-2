@@ -40,12 +40,12 @@ body {
 
 input[type=submit] {
   display: inline;
-  background: white;
+  background: #E9BDAF;
   border: none;
   border-radius: 19px;
   cursor: pointer;
   transition: 180ms;
-  box-shadow: 1px 1px 1px lightgray;
+  border: 2px solid white;
   height: 30px;
 }
 input[type=submit]:hover {
@@ -55,13 +55,14 @@ input[type=submit]:hover {
 }
 button {
   display: inline;
-  background: white;
+  background: #E9BDAF;
   border-radius: 19px;
   cursor: pointer;
   transition: 180ms;
   height: 30px;
   width: 220px;
   border: none;
+  border: 2px solid white;
 }
 button:hover {
   background:#D2C6F1;
@@ -89,12 +90,18 @@ footer {
   top: -15px;
   font-size: 12px;
 }
-.flow-right {
+#flow-right {
   text-align: right;
 }
-.flow-left {
+#flow-left {
   text-align: left;
 }
 #weather-details {
   color: 
+}
+ul {
+  margin-top: 15px;
+  list-style: none;
+  font-size: 15px;
+  color: #484749;
 }

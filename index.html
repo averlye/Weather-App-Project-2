@@ -20,28 +20,27 @@
       </div>
       <div class="city-details">
         <p id="date">Friday 15:00</p>
-        <h1>Warsaw</h1>
-        <img
-          id="icon-temperature"
-          src="http://openweathermap.org/img/wn/04d.png" /><span id="temperature">10</span>
-        <span id="units">
-          <a href="#" id="celsius-link">°C</a> |
-          <a href="#" id="fahrenheit-link">°F</a>
-        </span>
-        <div class="row" id="weather-details">
-          <div class="col-4">
-            <p class="flow-right">Wind speed: 
-              <span id="wind-speed">N/A</span></p>
+        <div class="row" id="flow-right">
+          <div class="col-sm-6">
+            <h1>Warsaw</h1>
+            <img
+              id="icon-temperature"
+              src="http://openweathermap.org/img/wn/04d.png" /><span id="temperature">10</span>
+            <span id="units">
+              <a href="#" id="celsius-link">°C</a> |
+              <a href="#" id="fahrenheit-link">°F</a>
+            </span>
           </div>
-          <div class="col-4">
-            <p>Precipitation: 
-              <span id="precipitation">N/A</span></p>
-          </div>
-          <div class="col-4">
-            <p class="flow-left">Weather description</p>
+          <div class="col-sm-6" id="flow-left">
+            <ul>
+              <li>Wind speed: 
+                <span id="wind-speed">2 km/h</span></li>
+              <li>Precipitation: 
+                <span id="precipitation">40%</span></li>
+              <li>Cloudy</li>
+            </ul>
           </div>
         </div>
-      </div>
       <br />
       <div class="city-forecast">
         <div class="row">
