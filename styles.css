@@ -15,6 +15,7 @@ body {
 }
 #date {
   padding-top: 20px;
+  font-size: 14px;
 }
 .city-forecast {
   border-radius: 20px;
@@ -100,8 +101,8 @@ footer {
   color: 
 }
 ul {
-  margin-top: 15px;
+  margin-top: 24px;
   list-style: none;
-  font-size: 15px;
+  font-size: 14px;
   color: #484749;
 }
