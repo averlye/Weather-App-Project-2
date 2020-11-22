@@ -114,3 +114,6 @@ h1 {
 #weather-temperature .active:hover {
   text-decoration: none;
 }
+.forecast-description {
+  color: #212529;
+}

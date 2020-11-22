@@ -54,7 +54,6 @@ function showForecast(response) {
   let forecast = response.data.daily[0];
   forecastElement.innerHTML = `
     <div class="col-sm-3">
-      <p></p>
       <p>${Math.round(forecast.temp.day)}°</p>
       <img
         src="https://openweathermap.org/img/wn/${forecast.weather[0].icon}.png" />
@@ -62,7 +61,6 @@ function showForecast(response) {
   forecast = response.data.daily[1];
   forecastElement.innerHTML += `
     <div class="col-sm-3">
-      <p></p>
       <p>${Math.round(forecast.temp.day)}°</p>
       <img
         src="https://openweathermap.org/img/wn/${forecast.weather[0].icon}.png" />
@@ -70,7 +68,6 @@ function showForecast(response) {
   forecast = response.data.daily[2];
   forecastElement.innerHTML += `
       <div class="col-sm-3">
-        <p></p>
         <p>${Math.round(forecast.temp.day)}°</p>
         <img
           src="https://openweathermap.org/img/wn/${forecast.weather[0].icon}.png" />
@@ -79,7 +76,6 @@ function showForecast(response) {
   forecast = response.data.daily[3];
   forecastElement.innerHTML += `
     <div class="col-sm-3">
-      <p></p>
       <p>${Math.round(forecast.temp.day)}°</p>
       <img
         src="https://openweathermap.org/img/wn/${forecast.weather[0].icon}.png" />
