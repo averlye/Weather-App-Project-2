@@ -1,5 +1,4 @@
 //DATE AND HOUR
-
 function formatDate () {
   let now = new Date();
   let date = now.getDate();
@@ -50,22 +49,41 @@ function showTemperature(response) {
 }
 //FORECAST
 function showForecast(response) {
-  let temperatureElement1 = document.querySelector("#weather-forecast-1");
-  let temperatureElement2 = document.querySelector("#weather-forecast-2");
-  let temperatureElement3 = document.querySelector("#weather-forecast-3");
-  let temperatureElement4 = document.querySelector("#weather-forecast-4");
-  let iconForecastElement1 = document.querySelector("#icon-forecast-1");
-  let iconForecastElement2 = document.querySelector("#icon-forecast-2");
-  let iconForecastElement3 = document.querySelector("#icon-forecast-3");
-  let iconForecastElement4 = document.querySelector("#icon-forecast-4");
-  temperatureElement1.innerHTML = `${Math.round(response.data.daily[0].temp.day)}°`;
-  temperatureElement2.innerHTML = `${Math.round(response.data.daily[1].temp.day)}°`;
-  temperatureElement3.innerHTML = `${Math.round(response.data.daily[2].temp.day)}°`;
-  temperatureElement4.innerHTML = `${Math.round(response.data.daily[3].temp.day)}°`;
-  iconForecastElement1.setAttribute("src", `https://openweathermap.org/img/wn/${response.data.daily[0].weather[0].icon}.png`);
-  iconForecastElement2.setAttribute("src", `https://openweathermap.org/img/wn/${response.data.daily[1].weather[0].icon}.png`);
-  iconForecastElement3.setAttribute("src", `https://openweathermap.org/img/wn/${response.data.daily[2].weather[0].icon}.png`);
-  iconForecastElement4.setAttribute("src", `https://openweathermap.org/img/wn/${response.data.daily[3].weather[0].icon}.png`);
+
+  let forecastElement = document.querySelector("#weather-forecast");
+  let forecast = response.data.daily[0];
+  forecastElement.innerHTML = `
+    <div class="col-sm-3">
+      <p></p>
+      <p>${Math.round(forecast.temp.day)}°</p>
+      <img
+        src="https://openweathermap.org/img/wn/${forecast.weather[0].icon}.png" />
+    </div>`;
+  forecast = response.data.daily[1];
+  forecastElement.innerHTML += `
+    <div class="col-sm-3">
+      <p></p>
+      <p>${Math.round(forecast.temp.day)}°</p>
+      <img
+        src="https://openweathermap.org/img/wn/${forecast.weather[0].icon}.png" />
+    </div>`;
+  forecast = response.data.daily[2];
+  forecastElement.innerHTML += `
+      <div class="col-sm-3">
+        <p></p>
+        <p>${Math.round(forecast.temp.day)}°</p>
+        <img
+          src="https://openweathermap.org/img/wn/${forecast.weather[0].icon}.png" />
+      </div>`;
+      console.log(response.data.daily[3]);
+  forecast = response.data.daily[3];
+  forecastElement.innerHTML += `
+    <div class="col-sm-3">
+      <p></p>
+      <p>${Math.round(forecast.temp.day)}°</p>
+      <img
+        src="https://openweathermap.org/img/wn/${forecast.weather[0].icon}.png" />
+    </div>`;
 }
 
 //API
